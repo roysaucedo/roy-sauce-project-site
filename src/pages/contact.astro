@@ -1,25 +1,9 @@
 ---
-const pageTitle = "Contact Me";
+const pageTitle = "Contact";
 import '../styles/global.css';
-import Navigation from '../components/Navigation.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import H1 from '../components/H1.astro';
 ---
-
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{pageTitle}</title>
-	</head>
-	<body>
-		<div class="p-4">
-			<section class="max-w-3xl mx-auto text-center">
-				<nav class="flex justify-center gap-8">
-					<Navigation />
-				</nav>
-				<h1 class="text-3xl font-extrabold">{pageTitle}</h1>
-			</section>
-		</div>
-	</body>
-</html>
+<BaseLayout pageTitle={pageTitle}>
+	<H1 pageTitle={pageTitle} />
+</BaseLayout>
