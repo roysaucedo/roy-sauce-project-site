@@ -3,7 +3,7 @@ import '../styles/global.css';
 const { pageTitle } = Astro.props;
 ---
 <div class="mx-auto max-w-2xl bg-gray-50 flex justify-center px-8 rounded-2xl">
-    <form name="Contact" action="/success" method="POST" data-netlify="true">
+    <form name="Contact" action="/success" method="POST" data-netlify="true" onsubmit="submit">
         <div class="my-4">
             <p>
                 <label>Your Name: <input class="input input-bordered w-full max-w-xs" type="text" name="name" /></label>
